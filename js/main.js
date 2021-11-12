@@ -6,7 +6,7 @@
 const app = new Vue({
     el: '#app',
 
-    created() {
+    created: function() {
        this.timeSwitch();
     },
 
