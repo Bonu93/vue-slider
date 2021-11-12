@@ -7,9 +7,7 @@ const app = new Vue({
     el: '#app',
 
     created: function() {
-        setInterval(() => {
-            this.nextSlide();
-        }, 3000);
+        setInterval(() => this.nextSlide(), 3000);
     },
 
     data: {
