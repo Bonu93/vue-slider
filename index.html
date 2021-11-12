@@ -30,7 +30,7 @@
                 <div v-for="(slide, i) in slides"
                  :class="{active: i === activeImg}"
                  class="thumb"
-                 @click="activeSlide"
+                 @click="activeSlide(i)"
                  >
                     <img :src="slides[i].image" :alt="slides[i].title">
                 </div>

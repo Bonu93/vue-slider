@@ -53,7 +53,8 @@ const app = new Vue({
             }
         },
 
-        activeSlide()  {
+        activeSlide(index)  {
+            this.activeImg = index;
         },
     },
 });
