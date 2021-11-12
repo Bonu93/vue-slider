@@ -6,8 +6,8 @@
 const app = new Vue({
     el: '#app',
 
-    created: function() {
-        setInterval(() => this.nextSlide(), 3000);
+    created() {
+       this.timeSwitch();
     },
 
     data: {
@@ -61,5 +61,10 @@ const app = new Vue({
         activeSlide(index)  {
             this.activeImg = index;
         },
+
+        timeSwitch() {
+            setInterval(() => this.nextSlide(), 3000);
+        },
     },
 });
+
